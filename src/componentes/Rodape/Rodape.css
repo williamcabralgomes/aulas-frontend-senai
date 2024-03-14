@@ -1,0 +1,14 @@
+
+  footer{
+    background-color: black;
+    grid-area: rodape;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .texto-copyright{
+
+    color: #fff;
+  }
