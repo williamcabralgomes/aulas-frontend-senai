@@ -1,4 +1,4 @@
 main{
-    background-color: yellow;
+    background-color: var(--cor-fundo-padrao);
     grid-area: principal;
   }

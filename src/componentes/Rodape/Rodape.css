@@ -1,6 +1,6 @@
 
   footer{
-    background-color: black;
+    background-color: var(--cor-fundo-padrao);
     grid-area: rodape;
 
     display: flex;

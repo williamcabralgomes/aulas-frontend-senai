@@ -1,5 +1,5 @@
 aside{
-    background-color:orangered;
+    background-color:var(--cor-primaria-clara);
     grid-area: ladoEsquerdo;
   }
   

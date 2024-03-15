@@ -1,10 +1,14 @@
+
+import CustomizadoBotao from '../BotaoCustomizado/CustomizadoBotao';
 import './Principal.css';
 
 const Principal =() => {
 
  return (  
     
-    <main>Principal</main>
+    <main>
+      <CustomizadoBotao/>
+    </main>
 
  )
 };
