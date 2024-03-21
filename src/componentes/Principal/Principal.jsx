@@ -7,9 +7,14 @@ const Principal =() => {
  return (  
     
     <main>
-      <CustomizadoBotao/>
+      <CustomizadoBotao tipo='primario'>Salvar</CustomizadoBotao>
+      <CustomizadoBotao tipo='secundario'>Git</CustomizadoBotao>
+      <CustomizadoBotao>Cancelar</CustomizadoBotao>
+
     </main>
 
  )
 };
+
+
 export default Principal;
