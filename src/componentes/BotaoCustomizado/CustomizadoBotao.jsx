@@ -15,7 +15,7 @@ const CustomizadoBotao =(props)=> {
     
 return(
 
-    <button className={classes.join(' ')}>{props.children}</button>
+    <button className={classes.join(' ')} onClick = {props.onClick}>{props.children}</button>
 
  )
 };
