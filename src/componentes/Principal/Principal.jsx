@@ -1,28 +1,46 @@
 
+import React from 'react';
 import CustomizadoBotao from '../BotaoCustomizado/CustomizadoBotao';
 import ListaProdutos from '../ListaProdutos/ListaProdutos';
+import BotaoContador from './BotaoContador';
+import Formulario from '../Formulario/Formulario';
 import './Principal.css';
 
 
 const Principal =() => {
 
+  const [exemplo,setExemplo]= React.useState('');
+
  return (  
     
     <main>
-      <CustomizadoBotao tipo='primario' onClick={() => {
-        alert('Salvo com sucesso');
-      }}>Salvar</CustomizadoBotao>
+      <nav>
 
-      <CustomizadoBotao tipo='secundario'  onClick={() => {
-        alert('Deu Git com sucesso');
-      }}>Git</CustomizadoBotao>
+      <CustomizadoBotao tipo = 'primario' onClick={() => setExemplo ('listaProdutos')}>
 
-      <CustomizadoBotao  onClick={() => {
-        alert('Cancelado com sucesso');
-      }}>Cancelar</CustomizadoBotao>
+        Lista de Produtos
+        
+        </CustomizadoBotao>
 
-      <ListaProdutos/>;
+      <CustomizadoBotao tipo = 'secundario'  onClick={() => setExemplo ('botaoContador') }>
+        
+        Botão Contador
+        
+        </CustomizadoBotao>
 
+        <CustomizadoBotao tipo = 'secundario'  onClick={() => setExemplo ('formulario') }>
+        
+        Formulario
+        
+        </CustomizadoBotao>
+
+     {exemplo === 'listaProdutos' && <ListaProdutos/> }
+    
+     {exemplo === 'botaoContador' && <BotaoContador/>}
+
+     {exemplo === 'formulario' && <Formulario/>}
+
+     </nav>
     </main>
 
  )
