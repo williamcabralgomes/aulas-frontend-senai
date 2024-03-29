@@ -4,6 +4,7 @@ import CustomizadoBotao from '../BotaoCustomizado/CustomizadoBotao';
 import ListaProdutos from '../ListaProdutos/ListaProdutos';
 import BotaoContador from './BotaoContador';
 import Formulario from '../Formulario/Formulario';
+import ListaCompras from '../ListaCompras/ListaCompras';
 import './Principal.css';
 
 
@@ -34,11 +35,19 @@ const Principal =() => {
         
         </CustomizadoBotao>
 
+        <CustomizadoBotao tipo = 'secundario'  onClick={() => setExemplo ('listaCompras') }>
+        
+        Lista de Compras
+        
+        </CustomizadoBotao>
+
      {exemplo === 'listaProdutos' && <ListaProdutos/> }
     
      {exemplo === 'botaoContador' && <BotaoContador/>}
 
      {exemplo === 'formulario' && <Formulario/>}
+
+     {exemplo === 'listaCompras' && <ListaCompras/>}
 
      </nav>
     </main>
